@@ -58,7 +58,29 @@
     }
   }
 
-  .content-aside {
-    margin-top: 1em;
+  img.center-logo {
+    width: 500px;
+  }
+
+  img.heart {
+    width: 100px;
+    padding: 50px 10px;
+  }
+
+  .numbers {
+    span.title {
+      font-weight: 100;
+    }
+
+    span.number {
+      color: #4488dd;
+      font-weight: 700;
+      font-size: 30vh;
+    }
+  }
+
+  span.note {
+    color: red;
+    font-size: 20px;
   }
 }
