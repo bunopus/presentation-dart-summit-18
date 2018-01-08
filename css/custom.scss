@@ -45,4 +45,20 @@
   img.block {
     margin-right: -5px;
   }
+
+  .image-float {
+    float: left;
+    position: relative;
+    top: 0;
+    left: 0;
+    .fragment:not(.current-fragment) {
+      img {
+        filter: blur(1px);
+      }
+    }
+  }
+
+  .content-aside {
+    margin-top: 1em;
+  }
 }
