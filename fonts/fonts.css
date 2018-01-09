@@ -2,3 +2,8 @@
     font-family: "Paintbrush";
     src: url('Paintbrush-Font.ttf') format("truetype");
 }
+
+@font-face {
+    font-family: Menlo;
+    src: url('./Menlo-Regular.ttf');
+}
