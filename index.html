@@ -102,6 +102,33 @@
 class ToDoListComponent
                         </code></pre>
 					</section>
+					<section>
+						<h2>#2 Immutable data</h2>
+						<pre><code data-trim data-noescape class="dart">
+@Component()
+class ToDoListComponent {
+
+    @Input()
+    var todos = <mark>new BuiltList&lt;String&gt;();</mark>
+
+//...
+                        </code></pre>
+					</section>
+					<section>
+						<h2>#3 Avoid zones</h2>
+						<pre><code data-trim data-noescape class="dart">
+@Component()
+class ToDoListComponent {
+
+  @override
+  void ngAfterViewInit() {
+    <mark>_zone.runOutsideAngular(() {</mark>
+        _input.onInput.listen(_handleInput);
+      ]);
+    });
+  }
+						</code></pre>
+					</section>
 				</section>
 
 				<section><span style="color: red;">Почему ангуляр дарт</span></section>
