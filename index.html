@@ -46,12 +46,12 @@
 					<span class="title">Years with Dart</span>
 				</section>
 				<section class="numbers">
-					<span class="number">670 000</span><br>
-					<span class="title">Lines of Dart code</span>
-				</section>
-				<section class="numbers">
 					<span class="number">50+</span><br>
 					<span class="title">Dart developers</span>
+				</section>
+				<section class="numbers">
+					<span class="number">670 000</span><br>
+					<span class="title">Lines of Dart code</span>
 				</section>
 				<section class="numbers">
 					<span class="number">1600</span><br>
@@ -73,7 +73,7 @@
 				<section data-state="blue-gradient"><img src="img/angulardart.svg" style="width: 250px" data-delay="1" data-animate="bounce"></section>
 				<section>
 					<img src="img/emoj_think.png" style="width: 150px"><br>
-					<p class="quote">Shall we recommend AngularDart for everyone?</p>
+					<p class="quote">Is AngularDart a framework #1 for everyone?</p>
 				</section>
 				<section><img class="fragment" src="img/no/1.gif" style="width: 600px"></section>
 				<section>
@@ -136,6 +136,37 @@ class ToDoListComponent {
 						<img src="img/snorlax.png" style="width: 150px">
 					</section>
 					<section data-background="img/no/4.gif"></section>
+					<section><img src="img/hello_world.png"></section>
+					<section>
+						<pre><code data-trim data-noescape class="dart">
+import 'package:angular/angular.dart';
+
+@Component(
+  selector: 'my-app',
+  template: '''
+    &lt;h1&gt;My First AngularDart App&lt;/h1&gt;
+
+    Hello World!
+  '''
+)
+class AppComponent {
+}
+						</code></pre>
+					</section>
+					<section>
+						<script src="https://asciinema.org/a/eUnQPgWgKFVl4WUqinKbX7Qze.js" id="asciicast-eUnQPgWgKFVl4WUqinKbX7Qze" async data-rows="25" data-speed="8" data-autoplay="true" data-size="big"></script>
+					</section>
+					<section><h2>192Kb</h2></section>
+					<section>
+						<h2 style="margin-bottom: 10px; line-height: 0">#4 preserve Whitespace</h2>
+						<span style="font-size: 25px; color: #9b9b9b">until Angular 5.0 Release</span>
+						<pre><code data-trim data-noescape class="dart">
+@Component(
+    <mark>preserveWhitespace: false</mark>
+)
+class ToDoListComponent
+                        </code></pre>
+					</section>
 				</section>
 
 				<section><span style="color: red;">Почему ангуляр дарт</span></section>
