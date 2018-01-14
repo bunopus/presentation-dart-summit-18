@@ -7,3 +7,8 @@
     font-family: Menlo;
     src: url('./Menlo-Regular.ttf');
 }
+
+@font-face {
+    font-family: Meslo;
+    src: url('./Meslo.ttf');
+}
