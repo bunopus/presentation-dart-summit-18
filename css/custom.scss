@@ -50,7 +50,7 @@ $blue-font: #3B8ACB;
   }
 
   img.small-logo {
-    width: 50px;
+    width: 30px;
     padding-right: 5px;
     margin: 0;
     vertical-align: middle;
@@ -117,12 +117,20 @@ $blue-font: #3B8ACB;
     h1 {
       margin: 0;
       line-height: 1em;
-      &.no {
-        font-family: Paintbrush, monospace;
-        font-size: 5em;
-        font-weight: 100;
-      }
     }
+
+    .handrawn {
+      font-size: 5em;
+    }
+  }
+
+  .handrawn {
+    font-family: Paintbrush, monospace;
+    font-weight: 100;
+  }
+
+  .red {
+    color: #CB2D39;
   }
 
   h3.question {
@@ -136,6 +144,34 @@ $blue-font: #3B8ACB;
       -webkit-box-shadow: 1px 3px 15px 2px rgba(0,0,0,0.75);
       -moz-box-shadow: 1px 3px 15px 2px rgba(0,0,0,0.75);
       box-shadow: 1px 3px 15px 2px rgba(0,0,0,0.75);
+    }
+  }
+
+  .social {
+    font-weight: 100;
+    font-size: 0.7em;
+    a, & {
+      color: #8f8f8f;
+    }
+    .twitter {
+      a {
+        color: black;
+      }
+    }
+  }
+
+  .closing-title {
+    padding-bottom: 50px;
+    img {
+      width: 150px;
+      vertical-align: middle;
+      padding-bottom: 20px;
+    }
+
+    span {
+      font-weight: 100;
+      font-style: italic;
+      font-size: 2em;
     }
   }
 }
