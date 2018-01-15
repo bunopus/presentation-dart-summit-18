@@ -113,6 +113,15 @@ $blue-font: #3B8ACB;
     color: $blue-font;
   }
 
+  .small-note {
+    font-weight: 100;
+    font-style: italic;
+    color: #b1b1b1;
+    line-height: 0;
+    font-size: 20px;
+    margin-top: 10px;
+  }
+
   .title_pres {
     h1 {
       margin: 0;
