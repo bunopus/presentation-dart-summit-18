@@ -178,8 +178,24 @@ class ToDoListComponent
 					<section>
 						<h2 style="margin-bottom: 10px; line-height: 0">#5 update versions</h2>
 						<span style="font-size: 25px; color: #9b9b9b">4.0+2 -> 5.0-alpha+3</span>
-						<pre><code data-trim data-noescape class="bash">
+						<pre><code data-trim data-noescape class="bash" style="text-align: center">
 192KB -> 188KB
+                        </code></pre>
+					</section>
+					<section>
+						<h2>#6 use deferred</h2>
+						<pre><code data-trim data-noescape class="dart">
+import 'package:angular2/angular2.dart';
+import 'expensive_comp.dart' show ExpComp;
+
+@Component(
+  selector: 'my-comp',
+  directives: const [ExpComp],
+  template: '''
+  &lt;expensive-comp <mark>@deferred</mark>&gt;&lt;/expensive-comp&gt;
+  ''',
+)
+class MyComp {}
                         </code></pre>
 					</section>
 				</section>
