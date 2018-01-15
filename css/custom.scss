@@ -139,11 +139,17 @@ $blue-font: #3B8ACB;
   }
 
   section.console {
-    svg {
-      font-family: Meslo, Menlo, monospace;
+    .wrapper {
       -webkit-box-shadow: 1px 3px 15px 2px rgba(0,0,0,0.75);
       -moz-box-shadow: 1px 3px 15px 2px rgba(0,0,0,0.75);
       box-shadow: 1px 3px 15px 2px rgba(0,0,0,0.75);
+      border-radius: 5px;
+      width: 900px;
+      height: 530px;
+
+      svg {
+        font-family: Meslo, Menlo, monospace;
+      }
     }
   }
 
