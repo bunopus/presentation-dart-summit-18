@@ -11,7 +11,7 @@
   },
   "stdout": [
     [
-      1.363403,
+      0.363403,
       "\u001b[1m\u001b[7m%\u001b[27m\u001b[1m\u001b[0m                                                                                                     \r \r\u001b]2;eugene.gusev@spb-egusev2: ~/reps/test_ang_size\u0007\u001b]1;..test_ang_size\u0007"
     ],
     [
@@ -91,7 +91,7 @@
       "Compiling test_ang_size|web/main.dart...\r\n"
     ],
     [
-      2.688538,
+      0.688538,
       "\u001b[36m[Dart2JS on test_ang_size|web/main.dart]:\u001b[39m"
     ],
     [
@@ -139,7 +139,7 @@
       "\u001b[39m \u001b[39m-\u001b[39mh\u001b[39m \u001b[39mb\u001b[39mu\u001b[39mi\u001b[39ml\u001b[39md\u001b[39m/\u001b[39mw\u001b[39me\u001b[39mb\u001b[39m/\u001b[39mm\u001b[39ma\u001b[39mi\u001b[39mn\u001b[39m.\u001b[39md\u001b[39ma\u001b[39mr\u001b[39mt\u001b[39m.\u001b[39mj\u001b[39ms"
     ],
     [
-      1.084847,
+      0.084847,
       "\u001b[?1l\u001b>\u001b[?2004l\r\r\n"
     ],
     [
@@ -171,7 +171,7 @@
       "\u001b[?2004h"
     ],
     [
-      2.298179,
+      0.298179,
       "\u001b[?2004l\r\r\n"
     ]
   ]
