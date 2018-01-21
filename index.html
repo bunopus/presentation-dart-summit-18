@@ -28,7 +28,8 @@
 		</script>
 	</head>
 	<body>
-		<div class="reveal">
+	<div class="loader"><div style="width: 100px">Loading<span class="dots"></span></div></div>
+	<div class="reveal">
 			<div class="slides">
                 <section data-background="#FFFFFF"><img class="fragment" data-duration="2" data-animate="fadeIn" src="img/ministry.png"></section>
 				<section>
@@ -265,6 +266,7 @@ class MyComp {}
 		<script src="js/reveal.js"></script>
 
 		<script>
+			var windowLoaded;
 			// More info about config & dependencies:
 			// - https://github.com/hakimel/reveal.js#configuration
 			// - https://github.com/hakimel/reveal.js#dependencies
@@ -274,7 +276,7 @@ class MyComp {}
 					{ src: 'plugin/markdown/marked.js' },
 					{ src: 'plugin/markdown/markdown.js' },
 					{ src: 'plugin/notes/notes.js', async: true },
-					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: waitForHLJS },
 					{ src: 'bower_components/jquery/dist/jquery.min.js' },
 					{ src: 'js/animations.js' },
 					{ src: 'plugin/alt-arrows/alt-arrows.js', async: true },
@@ -295,8 +297,41 @@ class MyComp {}
                             }
                         }
                     }
-                }
+                },
+                viewDistance: Number.MAX_VALUE
 			});
+
+			window.addEventListener('load', function () {
+                windowLoaded = true;
+            });
+
+            var dots = document.getElementsByClassName('dots')[0];
+            var loader = document.getElementsByClassName('loader')[0];
+			(function waitForLoad(){
+			    if(windowLoaded) {
+                    console.log('All data loaded');
+                    loader.remove();
+                    return;
+                }
+
+			    var text = dots.innerHTML;
+			    text += '.';
+			    if(text.length > 3) text = '';
+			    dots.innerHTML = text;
+
+                console.log('Waiting for data');
+
+                setTimeout(waitForLoad, 1000);
+			})();
+
+			function waitForHLJS() {
+			    if(window.hljs) {
+                    hljs.initHighlightingOnLoad();
+					return;
+                }
+                console.log('Waiting for hljs');
+                setTimeout(waitForHLJS, 1000);
+            }
 		</script>
 	</body>
 </html>
